@@ -22,8 +22,11 @@ ul {
 }
 .main{
     text-align: center;
-
-
+    position: relative;
+    /* padding-bottom: 42%; */
+    overflow: auto;
+    height: 650px;
+    
 }
 .container{
     height: auto;
@@ -54,7 +57,7 @@ button{
 }
 button:hover{
     color: rgb(255, 255, 255);
-    background-color: forestgreen;
+    background-color: #4CAF50;
 }
 img{
     width: 230px;
@@ -71,12 +74,14 @@ li {
 .footer{
     
     background-color: rgb(75, 105, 143);
-    height: 30px;
+    height: 40px;
+
+  
     text-align: center;
     color: rgb(255, 255, 255);
-    margin-top: 30px;
-    padding-top: 10px;
+    
+    padding-top: 15px;
 }
 @media screen and (max-width: 600px) {
-    
+
    }
