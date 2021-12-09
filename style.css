@@ -23,6 +23,10 @@ header {
 .nav {
     padding: 25px 70px 25px;
 }
+a {
+    text-decoration: none;
+    color: rgb(179, 177, 177);
+}
 .logo {
     padding: 25px 70px 25px; 
     color: rgb(179, 177, 177);
@@ -46,7 +50,6 @@ span {
     font-weight: bold;
 }
 font{
-
     color: red;
     font-size: 0.8em;
 }
@@ -57,9 +60,9 @@ font{
 }
 button {
     background-color: rgb(48, 48, 48);
-    border: 1px solid rgb(211, 70, 70);
+    border: 1px solid #CC6666;;
     border-radius: 10%;
-    color: rgb(211, 70, 70);
+    color: #CC6666;;
     padding: 8px 20px;
     text-align: center;
     font-size: 1.5em;
@@ -81,6 +84,7 @@ button {
     height: 30vw;
     align-items: center;
     font-size: 25px;
+    padding: 3%;
 }
 #icon {
     width: 7vw;
@@ -104,7 +108,82 @@ button {
     padding: 20px;
     flex-basis: 150px;
 } 
+.works {
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    color: white;
+    height: 20vw;
+    align-items: center;
+    font-size: 25px;
+    padding: 3%;
+}
+.contact-container{ 
+    box-sizing: border-box;
+    display: flex;
+    height: 50vh;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+.form-container {
 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 30vw;
+}
+.feedback-input {
+    color:white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #CC6666;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  textarea {
+    height: 100px;
+    line-height: 100%;
+    resize:vertical;
+  }
+  [type="submit"] {
+    width: 100%;
+    background:#CC6666;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  .contacts {
+      color: white;
+      align-self: center;
+      font-size: 25px;
+  }
+  .contacts p {
+      margin: 10px;
+  }
+  button:hover{
+    background-color: red;
+    color: white;
+  }
+  a:hover {
+      color: #CC6666;
+  }
+  [type="submit"]:hover {
+      background-color: red;
+  }
 @media screen and (max-width: 1230px){
     .main {
         font-size: 13px;
