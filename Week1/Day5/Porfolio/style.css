@@ -1,11 +1,10 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
 }
 html{
-
+    font-family: 'Ubuntu', sans-serif;
 }
 body {
     background-color: rgb(48, 48, 48);
@@ -34,7 +33,7 @@ span {
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 7%;
 }
 .greet span p{
@@ -43,7 +42,7 @@ span {
     font-weight: bold;
 }
 font{
-    font-family: 'Ubuntu', sans-serif;
+
     color: red;
     font-size: 0.8em;
 }
@@ -73,6 +72,31 @@ button {
 img {
     width: 40vw;
 }
+.about{
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    color: white;
+    height: 40vh;
+    align-items: center;
+    font-size: 16px;
+}
+
+.photo-about{
+    font-size: 10em;
+    flex-basis: 100vw;
+    text-align: center;
+}
+.skill {
+    padding: 40px;
+    display: flex;
+    color: white;
+    height: 40vh;
+    align-items: center;
+    font-size: 16px;
+}
+.skill div {
+    padding: 30px;
+} 
 
 @media screen and (max-width: 1230px){
     .main {
