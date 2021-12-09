@@ -60,7 +60,7 @@ font{
 }
 button {
     background-color: rgb(48, 48, 48);
-    border: 1px solid #CC6666;;
+    border: 1px solid #CC6666;
     border-radius: 10%;
     color: #CC6666;;
     padding: 8px 20px;
@@ -175,11 +175,11 @@ form{
       margin: 10px;
   }
   button:hover{
-    background-color: red;
-    color: white;
+    transform: scale(1.2);
   }
-  a:hover {
+  span a:hover {
       color: #CC6666;
+      text-transform: capitalize;
   }
   [type="submit"]:hover {
       background-color: red;
