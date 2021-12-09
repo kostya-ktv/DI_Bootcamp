@@ -5,6 +5,7 @@
 }
 html{
     font-family: 'Ubuntu', sans-serif;
+
 }
 body {
     background-color: rgb(48, 48, 48);
@@ -33,7 +34,7 @@ span {
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 7%;
 }
 .greet span p{
@@ -69,22 +70,26 @@ button {
     color: rgb(100, 98, 98);
     font-weight: bold;
 }
-#avatar {
+#avatar{
     width: 40vw;
+}
+#icon {
+    width: 10vw;;
 }
 
 .about{
     background-color: rgb(28, 28, 28);
     display: flex;
     color: white;
-    height: 40vh;
+    height: 30vw;
     align-items: center;
-    font-size: 16px;
+    font-size: 25px;
+   
 }
 
 .photo-about{
     font-size: 10em;
-    flex-basis: 100vw;
+    flex-basis: 50vw;
     text-align: center;
 }
 .skill {
@@ -103,10 +108,16 @@ button {
     .main {
         font-size: 13px;
     }
+    .about {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 920px){
     .main {
         font-size: 10px;
+    }
+    .about {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 730px){
@@ -122,6 +133,9 @@ button {
     }
     .nav{
         text-align: center;
+    }
+    .about {
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 530px){
