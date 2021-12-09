@@ -36,6 +36,9 @@ span {
     justify-content: space-between;
     /* min-height: 100vh; */
     padding: 7%;
+    background-image: url(Drawing.sketchpad.png);
+    background-position-x: center;
+
 }
 .greet span p{
     font-size: 4em;
@@ -128,7 +131,7 @@ button {
     .skill div {
         
         padding: 20px;
-        flex-basis: 250px;
+        flex-basis: 190px;
     } 
 }
 @media screen and (max-width: 730px){
@@ -151,7 +154,7 @@ button {
     .skill div {
         font-size: 10px;
         padding: 20px;
-        flex-basis: 150px;
+        flex-basis: 120px;
     }
     .skill din span {
         display: none;
@@ -170,5 +173,10 @@ button {
     }
     button{
         font-size: 2em;
+    }
+    .skill div {
+        font-size: 7px;
+        padding: 20px;
+        flex-basis: 80px;
     }
 }
