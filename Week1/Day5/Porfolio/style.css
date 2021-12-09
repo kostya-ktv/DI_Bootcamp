@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+
+}
+body {
+    background-color: rgb(48, 48, 48);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(28, 28, 28);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.nav span { 
+    color: rgb(179, 177, 177);
+}
+.nav {
+    padding: 25px 70px 25px;
+}
+.logo {
+    padding: 25px 70px 25px; 
+    color: rgb(179, 177, 177);
+}
+span {
+    margin-left: 25px;
+}
+.main {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 90vh;
+    padding: 7%;
+}
+.greet span p{
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+}
+font{
+    font-family: 'Ubuntu', sans-serif;
+    color: red;
+    font-size: 0.8em;
+}
+.skills {
+    color: rgb(117, 117, 117);
+    font-size: 2em;
+    font-weight: bold;
+}
+button {
+    background-color: rgb(48, 48, 48);
+    border: 1px solid rgb(211, 70, 70);
+    border-radius: 10%;
+    color: rgb(211, 70, 70);
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 4px 2px;
+}
+.line { 
+    border-top: 3px solid rgb(28, 28, 28);
+    width: 50vw;
+    margin-left: 25%;
+    color: rgb(100, 98, 98);
+    font-weight: bold;
+}
+img {
+    width: 40vw;
+}
+
+@media screen and (max-width: 1230px){
+    .main {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 920px){
+    .main {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 730px){
+    header{
+        flex-direction: column;
+    }
+
+    .main {
+        font-size: 8px;
+    }
+    .logo, .nav { 
+        padding: 10px 10px 10px;
+    }
+    .nav{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 530px){
+
+    .main {
+        font-size: 6px;
+    }
+    .logo, .nav { 
+        padding: 10px 10px 10px;
+    }
+    .nav{
+        text-align: center;
+    }
+    button{
+        font-size: 2em;
+    }
+}
