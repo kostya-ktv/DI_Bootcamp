@@ -69,9 +69,10 @@ button {
     color: rgb(100, 98, 98);
     font-weight: bold;
 }
-img {
+#avatar {
     width: 40vw;
 }
+
 .about{
     background-color: rgb(28, 28, 28);
     display: flex;
