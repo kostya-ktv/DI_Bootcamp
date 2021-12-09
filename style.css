@@ -81,7 +81,7 @@ button {
     background-color: rgb(28, 28, 28);
     display: flex;
     color: white;
-    height: 30vw;
+    height: auto;
     align-items: center;
     font-size: 25px;
     padding: 3%;
@@ -95,24 +95,24 @@ button {
     text-align: center;
 }
 .skill {
-    padding: 40px;
+    padding: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: flex-start;
+    align-content: center;
     color: white;
-    height: 40vh;
+    height: auto;
     font-size: 20px;
 }
 .skill div {
-    padding: 20px;
+
     flex-basis: 150px;
 } 
 .works {
     background-color: rgb(28, 28, 28);
     display: flex;
     color: white;
-    height: 20vw;
+    height: auto;
     align-items: center;
     font-size: 25px;
     padding: 3%;
@@ -120,12 +120,9 @@ button {
 .contact-container{ 
     box-sizing: border-box;
     display: flex;
-    height: 50vh;
+    height: 60vh;
     justify-content: space-evenly;
     padding: 3%;
-}
-.form-container {
-
 }
 form{
     display: flex;
@@ -179,7 +176,7 @@ form{
   }
   span a:hover {
       color: #CC6666;
-      text-transform: capitalize;
+      
   }
   [type="submit"]:hover {
       background-color: red;
@@ -188,7 +185,7 @@ form{
     .main {
         font-size: 13px;
     }
-    .about {
+    .about, .works {
         font-size: 20px;
     }
     .skill{
@@ -204,7 +201,7 @@ form{
     .main {
         font-size: 10px;
     }
-    .about {
+    .about, .works {
         font-size: 15px;
     }
     .skill div {
@@ -227,16 +224,25 @@ form{
     .nav{
         text-align: center;
     }
-    .about {
+    .about, .works {
         font-size: 14px;
     }
     .skill div {
         font-size: 10px;
-        padding: 20px;
+        padding: 10px;
+
         flex-basis: 120px;
     }
     .skill din span {
         display: none;
+    }
+    .contact-container{ 
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .contacts {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 530px){
@@ -252,6 +258,9 @@ form{
     }
     button{
         font-size: 2em;
+    }
+    .works {
+        font-size: 10px;
     }
     .skill div {
         font-size: 7px;
