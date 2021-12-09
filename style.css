@@ -63,17 +63,11 @@ button {
     font-weight: bold;
     margin: 4px 2px;
 }
-.line { 
-    border-top: 3px solid rgb(28, 28, 28);
-    width: 50vw;
-    margin-left: 25%;
-    color: rgb(100, 98, 98);
-    font-weight: bold;
-}
+
 #avatar{
     width: 40vw;
 }
-#icon {
+#iconAbout {
     width: 10vw;;
 }
 
@@ -84,9 +78,10 @@ button {
     height: 30vw;
     align-items: center;
     font-size: 25px;
-   
 }
-
+#icon {
+    width: 7vw;
+}
 .photo-about{
     font-size: 10em;
     flex-basis: 50vw;
@@ -95,13 +90,16 @@ button {
 .skill {
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
     color: white;
     height: 40vh;
-    align-items: center;
-    font-size: 16px;
+    font-size: 20px;
 }
 .skill div {
-    padding: 30px;
+    padding: 20px;
+    flex-basis: 150px;
 } 
 
 @media screen and (max-width: 1230px){
@@ -111,6 +109,14 @@ button {
     .about {
         font-size: 20px;
     }
+    .skill{
+        font-size: 15px;
+    }
+    .skill div {
+        
+        padding: 20px;
+        flex-basis: 250px;
+    } 
 }
 @media screen and (max-width: 920px){
     .main {
@@ -119,6 +125,11 @@ button {
     .about {
         font-size: 15px;
     }
+    .skill div {
+        
+        padding: 20px;
+        flex-basis: 250px;
+    } 
 }
 @media screen and (max-width: 730px){
     header{
@@ -136,6 +147,14 @@ button {
     }
     .about {
         font-size: 14px;
+    }
+    .skill div {
+        font-size: 10px;
+        padding: 20px;
+        flex-basis: 150px;
+    }
+    .skill din span {
+        display: none;
     }
 }
 @media screen and (max-width: 530px){
