@@ -14,11 +14,12 @@
     <header>
         <div class="logo">KOSTYA K.</div>
         <div class="nav">
-            <span><a href="#about" style="color:rgb(179, 177, 177); text-decoration:none">ABOUT ME</a></span>
-            <span><a href="#ss" style="color:rgb(179, 177, 177); text-decoration:none">SKILLS</a></span>
-            <span>MY WORKS</span>
+            <span><a href="#about">ABOUT ME</a></span>
+            <span><a href="#ss">SKILLS</a></span>
+            <span><a href="#ss">MYWORKS</a></span>
         </div>
     </header>
+    <!-- ABOUT ME -->
     <div class="main">
         <div class="greet">
             <span>
@@ -26,11 +27,8 @@
                 <p>I'am <font color="red">KOSTYA</font>,</p>
                 <p>Full Stack Developer.</p>
             </span>
-                <br><p class="skills">CSS / JavaScript / React / NodeJS</p>
-                <br>
-                <br>
-                <br>
-            <button>Contact me</button>
+                <br><p class="skills">CSS / JavaScript / React / NodeJS</p><br><br><br>
+            <button><a href="#contactForm" style="text-decoration: none;color: #CC6666">Contact me</a></button>
         </div>
         <div class="photo">
             <img id="avatar" src="an (1).png">
@@ -38,37 +36,57 @@
     </div>
     <div class="about">
         <div class="photo-about">
-            #
+            <img id="iconAbout" src="icon.svg" width="120px">
         </div>
         <div class="details">
             <p><h1>Its about me</h1></p><a id="about"></a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus sapiente praesentium officia debitis adipisci laudantium nam eos ab, veritatis saepe eveniet optio non perspiciatis reiciendis quam iste suscipit id!</p>
         </div>
     </div>
+    <!-- SKILLS AREA -->
     <div class="skill">
         <div>
-            <p><img id="nodejs" src="icons8-nodejs.svg" width="80px"><h1>NodeJS</h1></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi!</p>
+            <p><img id="icon" src="icons8-nodejs.svg"><h1>NodeJS</h1></p>
         </div>
         <div>
-            <p><img id="JavaScript" src="js.svg" width="80px"><h1>JavaScript</h1></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi!</p>
+            <p><img id="icon" src="js.svg"><h1>JavaScript</h1></p>
         </div>
         <div>
-            <p><img id="react" src="react.svg" width="80px"><h1>React</h1></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi!</p>
+            <p><img id="icon" src="java.svg"><h1>Java</h1></p></a>
         </div>
         <div>
-            <p><img id="mongo" src="mongodb.png" width="80px"><h1>MongoDB</h1></p><a id="ss"></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi!</p>
+            <p><img id="icon" src="react.svg""><h1>React</h1></p>
         </div>
         <div>
-            <p><img id="sass" src="sass.svg" width="80px"><h1>SASS</h1></p><a id="ss"></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, modi!</p>
+            <p><img id="icon" src="mongodb.png"><h1>MongoDB</h1></p><a id="ss"></a>
         </div>
-        
-
+        <div>
+            <p><img id="icon" src="sass.svg"><h1>SASS</h1></p></a>
+        </div>
     </div>
-    <div class="line"></div>
+    <!-- WORKS AREA  -->
+    <div class="works">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda!</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda!</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda!</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda!</div>
+    </div>
+    <!-- CONTACT ME AREA -->
+    <div class="contact-container">
+        <div class="contacts">
+            <p><img src="phone.svg" width="25px"> 053-444-222-44</p>
+            <p><img src="email.svg" width="25px"> email@gmail.com</p>
+            <p><img src="git.svg" width="25px"> Github </p>
+            <p><img src="linkedin.svg" width="25px"> email@gmail.com</p>
+        </div>
+        <div class="form-container">
+            <form id="contactForm">      
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input type="submit" value="CONTACT ME"/>
+              </form>
+        </div>
+    </div>
 </body>
 </html>

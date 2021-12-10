@@ -28,7 +28,8 @@
                 <p>Full Stack Developer.</p>
             </span>
                 <br><p class="skills">CSS / JavaScript / React / NodeJS</p><br><br><br>
-            <button><a href="#contactForm" style="text-decoration: none;color: #CC6666">Contact me</a></button>
+            <!-- <button><a href="#contactForm" style="text-decoration: none;color: #CC6666">Contact me</a></button> -->
+            <button onclick="on()">Contact me</button>
         </div>
         <div class="photo">
             <img id="avatar" src="an (1).png">
@@ -88,5 +89,29 @@
               </form>
         </div>
     </div>
+    <div id="overlay">
+        
+        <form id="contactForm" style="
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%)"> 
+            <img src="close.svg" width="30px" style="margin-bottom: 5px"
+            onclick="off()">     
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="CONTACT ME"/>
+          </form>
+    </div>
+    <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+        </script>
 </body>
 </html>
