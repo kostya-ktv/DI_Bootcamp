@@ -1,29 +1,3 @@
-//string '534'
-// 5 + '34'
-// //number 1
-//     5 - '4'
-// // 0
-//     10 % 5
-// // 5
-//     5 % 10
-// 'JavaScript'
-//     "Java" + "Script"
-// // '  '
-//     " " + " "
-// // ' 0'
-//     " " + 0
-// // 2
-//     true + true
-// // 1
-//     true + false
-// // 1
-//     false + true
-// // -1 
-//     false - true
-// // -1
-//     3 - 4
-// //NaN
-//     "Bob" - 
 
 // // #################################Exercise 1 : Favorite Color
 // let me = ["my","favorite","color","is","blue"];
