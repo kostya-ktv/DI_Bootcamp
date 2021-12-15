@@ -76,9 +76,9 @@
 
 // // While the number is smaller than 10 continue asking the user for a new number.
 // // Tip : Which while loop is more relevant for this situation?
-// do {
-//     var num = parseFloat(prompt("NUMBER"))
-// } while(num < 10 || isNaN(num))
+do {
+    var num = parseFloat(prompt("NUMBER"))
+} while(num < 10 || isNaN(num))
 
 // Exercise 4 : Building Management
 // Instructions
