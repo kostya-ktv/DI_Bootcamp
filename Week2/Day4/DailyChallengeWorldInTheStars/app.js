@@ -1,5 +1,7 @@
+stars();
+
 function stars(){
-    let sentence = prompt("Some sent sentence separated by commas").split(",");
+    let sentence = prompt("Input sentence separated by commas").split(",");
     printArray(feelArray(sentence));  
 }
 
@@ -11,7 +13,7 @@ function printArray(array){
 
 function feelArray(arr){
 
-    let bigger = findBiggerLength(arr);   
+    let bigger = findBiggerLength(arr) + 1;   
     for(let i = 0; i < arr.length; i++){
         if(arr[i].length < bigger){   
             arr[i] = padString(arr[i], bigger, " ")
@@ -35,7 +37,7 @@ function findBiggerLength(arr){
     for(let el of arr){
         if(el.length > bigger) bigger = el.length;
     }
-    return bigger + 1;
+    return bigger;
 }
 
-stars();
+
