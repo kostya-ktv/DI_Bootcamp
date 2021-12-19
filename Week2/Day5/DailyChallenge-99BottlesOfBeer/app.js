@@ -5,10 +5,12 @@ for(let i = 1; i <= number; i++){
 }
 
 function printSong(countBottles, countDownBottles){
-    console.log(`${countBottles} bottles of beer on the wall`)
-    console.log(`${countBottles} bottles of beer`)
-
-    countDownBottles == 1 ? console.log(`Take ${countDownBottles} down, pass it around`) : console.log(`Take ${countDownBottles} down, pass them around`)
+    console.log(`${countBottles} bottles of beer on the wall \n${countBottles} bottles of beer`)
+    
+    countDownBottles == 1 ? 
+        console.log(`Take ${countDownBottles} down, pass it around`) 
+        : 
+        console.log(`Take ${countDownBottles} down, pass them around`)
     if(countBottles - countDownBottles <= 0) {
         console.log("no more bottles");
         return false;

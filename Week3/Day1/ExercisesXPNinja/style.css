@@ -1,0 +1,18 @@
+table { 
+    background-color: rgb(255, 255, 255);
+    border-spacing: 0px;
+}
+th {
+    font-weight: bold;
+}
+td { 
+    box-sizing: border-box;
+    border: 1px solid rgb(224, 223, 223);
+    text-align: center;
+    width: 8vw;
+    height: 5vh;
+    padding: 5px;
+}
+table tr:nth-child(2n+2){
+    background-color: rgb(216, 216, 216);
+}
