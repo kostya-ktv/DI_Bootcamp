@@ -45,10 +45,9 @@ for(let el of planets){
     el.moon.forEach(m => {
         let moon = document.createElement('div');
         moon.classList.add('moon');
-        
         planet.append(moon);
     })
-    
+    document.querySelector("div[id=container] p[class=article]")
 }
 
 function getRandomColor() {
