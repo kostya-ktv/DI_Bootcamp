@@ -10,7 +10,7 @@ let shuffle = document.querySelector('#shuffle')
 let values = []
 button.addEventListener('click', (e)=>{
     e.preventDefault();
-    if(document.querySelectorAll('input').every(e => e.value)) console.log('true')
+    
     let p = document.createElement('p')
     p.innerText = generatedStory(noun.value, adjective.value, names.value, verb.value, place.value);
     document.querySelector('#story').lastElementChild != null ? document.querySelector('#story').lastElementChild.remove() : ""
@@ -30,8 +30,8 @@ shuffle.addEventListener('click', ()=>{
 
 function generatedStory(someNone, someAdjective, someName, someVerb, somePlace){
     let stories = [
-        `When I go to ${somePlace}, I eat my ${someNone}. Suddenly I saw a ${someAdjective} car and I decided to ${someVerb} it`,
-        `Yesterday I fried a ${someAdjective} ${someNone}. I went to ${someVerb} my hands in the ${somePlace}.`
+        `Hi iam ${someName}.When I go to ${somePlace}, I eat my ${someNone}. Suddenly I saw a ${someAdjective} car and I decided to ${someVerb} it`,
+        `Yesterday I fried a ${someAdjective} ${someNone}. I went to ${someVerb} my hands in the ${somePlace}. Thanks for all ${someName}`
     ]
     return stories[Math.floor(Math.random() * 2)]
 
