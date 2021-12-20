@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    padding: 10px;
+}
+.listplanets {
+
+}
+.planet {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    border: 2px solid white;
+}
+.moon {
+    position: relative;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(237, 237, 237);
+    border: 5px solid red;
+    
+}
