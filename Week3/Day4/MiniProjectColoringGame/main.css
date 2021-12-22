@@ -6,7 +6,7 @@
 
 button {
     width: 100%;
-    height: 40px;
+    height: 5vh;
 }
 .colorBox { 
     display: grid;
@@ -27,7 +27,7 @@ button {
 .colorsDiv {
     background-color: rgb(177, 156, 128);
     width: 30vw;
-    height: 100vh;
+    height: 95vh;
 }
 .gridDiv {
     width: 70vw;
