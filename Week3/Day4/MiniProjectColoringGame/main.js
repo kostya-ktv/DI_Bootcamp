@@ -153,7 +153,6 @@ let colorDiv = document.createElement('div');
 let gridDiv = document.createElement('div');
 let button = document.createElement('button');
 let colors = document.createElement('div');
-let arrayOfColors = ['black', 'green'];
 let currentColor = "";
 let mouseDown = false;
 
@@ -163,7 +162,6 @@ mainDiv.classList.add('main');
 colorDiv.classList.add('colorsDiv');
 colorDiv.append(button, colors);
 gridDiv.classList.add('gridDiv');
-
 document.body.append(mainDiv);
 mainDiv.append(colorDiv, gridDiv);
 
@@ -173,16 +171,18 @@ for(let i = 0; i < 900; i++){
     cell.addEventListener('mousedown', setColor)
     cell.addEventListener('mouseover', overColor)
     cell.addEventListener('mouseup', ()=> mouseDown = false)
-    
     gridDiv.append(cell);
 }
+
+
 for(let i = 0; i < 21; i++){
     let colorCell = document.createElement('div');
     colorCell.classList.add('colorCell')
-    colorCell.style.backgroundColor = colorNames[i + 10];
+    colorCell.style.backgroundColor = colorNames[Math.floor(Math.random() * colorNames.length - 1)];
     colorCell.addEventListener('click', chooseColor)
     colors.append(colorCell);
 }
+
 button.addEventListener('click', ()=>{
     document.querySelectorAll('.cell').forEach(e=> e.style.backgroundColor = "white")
 })
@@ -195,7 +195,6 @@ function setColor(e){
     e.target.style.backgroundColor = currentColor;
 }
 function overColor(e){
-
     if(mouseDown) e.target.style.backgroundColor = currentColor;
 }
 
