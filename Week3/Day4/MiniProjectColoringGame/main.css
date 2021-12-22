@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+button {
+    width: 100%;
+    height: 40px;
+}
+.colorBox { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+}
+.colorCell {
+ 
+    border: 1px solid black;
+}
+.main {
+    display: flex;
+
+}
+.colorsDiv {
+    background-color: rgb(177, 156, 128);
+    width: 30vw;
+    height: 100vh;
+}
+.gridDiv {
+    width: 70vw;
+    height: 100vh;
+    background-color: rgb(26, 70, 70);
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+.cell {
+    background-color: white;
+    border: 1px solid rgb(212, 212, 212);
+}
