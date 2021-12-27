@@ -29,10 +29,11 @@
 // const add5 = curriedSum(5)
 // add5(12);
 
-// Exercise 5 : Composing
+// Exercise 5 : Composing 
 // Analyse the code below, and before executing it, predict the outcome of the last line.
-const compose = (f, g) => (a) => f(g(a));
-const add1 = (num) => num + 1;
-const add5 = (num) => num + 5;
-console.log(compose(add1, add5)(10))
+//------> 16
+// const compose = (f, g) => (a) => f(g(a));
+// const add1 = (num) => num + 1;
+// const add5 = (num) => num + 5;
+// compose(add1, add5)(10)
 
