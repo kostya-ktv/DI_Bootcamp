@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Sega;
+    src: url('assets/segafont/SEGA.TTF');
+}
+@font-face {
+    font-family: Shizuru;
+    src: url('assets/Shizuru/Shizuru-Regular.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+}
+.container {
+    height: 90vh;
+    width: 100vw;
+}
+.logo {
+    font-family: Sega;
+    font-size: 50px;
+    color: white;
+}
+.header input {
+    height: 30%;
+    width: 300px;
+}
+.header {   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-image: url('assets/panel.jpg');
+    
+}
+.card-container {
+    box-sizing: border-box; 
+    /* height: 100%; */
+    display: flex;
+    min-height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('assets/back.jpg');
+    background-size: cover; 
+    width: 100vw; 
+    box-shadow: 0 -10px 10px rgb(253, 253, 253);
+}
+.card {
+    padding: 10px;
+    margin: 20px;
+    background-image: url('assets/robot-pattern.jpg');
+    width: 250px;
+    height: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+}
+.card img {
+    width: 100%;
+    margin-bottom: 30px;
+}
