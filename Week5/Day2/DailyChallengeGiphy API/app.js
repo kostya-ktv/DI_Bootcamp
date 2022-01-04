@@ -2,6 +2,7 @@ let form = document.querySelector('form');
 document.querySelector('#removeAllGifs').addEventListener('click', ()=>{
     document.querySelector('.container').innerHTML = '';
 })
+
 form.addEventListener('submit', fetchRequest);
 
 function fetchRequest(e) {
@@ -10,11 +11,11 @@ function fetchRequest(e) {
     request.open('GET',`https://api.giphy.com/v1/gifs/search?q=${form.elements[0].value}&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My&limit=50`);
     request.responseType = 'json';
     request.send();
-
     request.onload = () => { 
         appendGif(request.response.data[Math.floor(Math.random() * 50)].images.original.url);
     }
 }
+
 function appendGif(url) {
     let card = document.createElement('div');
     let deleteButton = document.createElement('button');
