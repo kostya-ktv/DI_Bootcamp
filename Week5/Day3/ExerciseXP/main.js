@@ -16,15 +16,14 @@
 
 
 
-function compareToTen(num) {
-    setTimeout(() => {
-        return new Promise((resolve, reject)=> {
-        
-            num > 10 && resolve(" Success ");
-            num < 10 && reject("Failed")
-        }).then(result => console.log(result + " ----OK"))
-          .catch(result => console.log(result + "-----Error"));
-    }, 4000)
+// function compareToTen(num) {
+//     setTimeout(() => {
+//         return new Promise((resolve, reject)=> {
+//         num > 10 && resolve(" Success ");
+//         num < 10 && reject("Failed")
+//         }).then(result => console.log(result + " ----OK"))
+//           .catch(result => console.log(result + "-----Error"));
+//     }, 4000)
     
-}
-compareToTen(9)
+// }
+// compareToTen(9)

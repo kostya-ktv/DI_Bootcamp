@@ -72,33 +72,27 @@ let morse = `{
     ")": "-.--.-"
   }`
 
-// console.log(morse);
-// toJs();
-toJs(morse);
 
-console.log(morse);
 
 
 // let someString = prompt('Enter a sentence');
-let someString = 'The second funtion';
+let someString = 'thankyou';
+let translationMorse = '';
 
-// function toMorse(morseJS) {
-//     return new Promise((resolve, reject) => {
-//         for(let el of [...morseJS]){
-            
-//         }
-//     })
-//     .then(obj => obj = JSON.parse(obj))
-//     .then(obj => console.log(obj))
-//     .catch(error => console.log(error + '-error-'))
-// }
+toJs(morse);
+toMorse(someString);
+console.log(translationMorse);
 
 
-function toJs(obj) { 
+
+
+function toMorse(morseObj) {
     return new Promise((resolve, reject) => {
-        obj ? resolve(obj) : reject("empty object")
+        [...morseObj].forEach(el => Object.hasOwn(morse, el) ? resolve(translationMorse += morse[el] + '\n') : reject("error"))
     })
-    .then(obj => obj = JSON.parse(obj))
+    .catch(error => console.log(error + 'doesnt include character'));
+}
+function toJs(obj) { 
+    return new Promise((resolve, reject) => obj ? resolve(morse = JSON.parse(obj)) : reject("empty object"))
     .catch(error => console.log(error + '-error-'))
-
 }
