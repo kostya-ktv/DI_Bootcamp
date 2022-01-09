@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.modalWindow {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100%; 
+    height: 100%;
+}
+.modalWindow i {
+    position: relative;
+    top: 40%;
+    left: 48%;
+    color: rgb(168, 142, 93);
+    font-size: 100px;
+    filter: blur();
+}
+body {
+
+    font-family: monospace;
+    background: rgb(1,0,0);
+    background: linear-gradient(90deg, rgba(1,0,0,1) 0%, rgba(80,32,32,1) 50%, rgba(0,0,0,1) 100%);height: 100vh;
+}
+.container {
+    position: relative;
+    left: 50%;
+    top: 20%;
+    width: 500px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.findButton {
+    width: auto;
+    margin: 10px;
+    border: 1px solid rgb(206, 192, 173);
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(189, 150, 150);
+    font-size:25px;
+}
+.findButton:hover {
+    color: white;
+}
+
+.details {
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: rgb(206, 192, 173);
+}

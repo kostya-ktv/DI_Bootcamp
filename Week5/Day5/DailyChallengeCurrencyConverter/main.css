@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {  
+    background-color: rgb(56, 56, 56);
+    font-family: monospace;
+    font-weight: 500;
+    color:rgb(196, 189, 189);
+    width: 100vw;
+    height: 100vh;
+}
+#currentSelect, #wishSelect{
+    margin: 10px;
+    width: 350px;
+    height: 50px;
+    font-size: 20px;  
+}
+#amountInput {
+    margin: 10px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px; 
+}
+#submitButton {
+    padding: 10px;
+    font-size: 20px;
+}
+.container {
+    padding: 50px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    background-color: rgb(84, 84, 85);
+    width: 700px;
+    text-align: center;
+    font-size: 30px;
+}

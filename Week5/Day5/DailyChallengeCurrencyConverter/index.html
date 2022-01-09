@@ -5,10 +5,22 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js' defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <form method="GET">
+            <h1>Currency Converter</h1>
+            <label>From</label><br>
+            <select name="currentCurrency" id="currentSelect"></select><br>
+            <label>To</label><br>
+            <select name="wishfullCurrency"id="wishSelect"></select><br>
+            <label>Amount</label><br>
+            <input type="text" name="amountOfCurrency" id="amountInput">
+            <input type="submit" name="submit" id="submitButton" value="Convert"><br>
+            <span id="showSpan">~~~~</span>
+        </form>
+    </div>
 </body>
 </html>
