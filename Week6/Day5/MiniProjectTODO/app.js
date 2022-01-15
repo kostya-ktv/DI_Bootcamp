@@ -1,3 +1,4 @@
+
 const addTaskWindow = document.querySelector('.addTaskWindow'),
     container = document.querySelector('.container'),
     addLogo = document.querySelector('#addLogo'),
@@ -28,11 +29,12 @@ addForm.addEventListener('submit', saveNewTask);
 addLogo.addEventListener('click', ()=>{addForm.reset(); addTaskWindow.classList.toggle('hide')});
 cancel.addEventListener('click', ()=>{editId = 0;addTaskWindow.classList.toggle('hide')});
 
+
 loadTasksFromLocalStorage();
 
 
 function loadTasksFromLocalStorage() {
-
+    
     listTasks.innerHTML = '';
     Object.keys(localStorage).forEach(el => {
         createDivTask(JSON.parse(localStorage.getItem(el)));      
