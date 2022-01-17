@@ -11,7 +11,7 @@ const addTaskWindow = document.querySelector('.addTaskWindow'),
     listTasks = document.querySelector('.listTasks'),
     cancel = document.querySelector('.cancel');
 
-let taskId = Object.keys(localStorage).length,
+let taskId = Object.keys(localStorage).sort().pop() || 0,
     editId = 0;
     currentDate = new Date();
     
@@ -30,15 +30,20 @@ addLogo.addEventListener('click', ()=>{addForm.reset(); addTaskWindow.classList.
 cancel.addEventListener('click', ()=>{editId = 0;addTaskWindow.classList.toggle('hide')});
 
 
+
+
 loadTasksFromLocalStorage();
-
-
 function loadTasksFromLocalStorage() {
     
     listTasks.innerHTML = '';
-    Object.keys(localStorage).forEach(el => {
-        createDivTask(JSON.parse(localStorage.getItem(el)));      
-    })
+    // Object.keys(localStorage).sort().forEach(el => {
+    //     createDivTask(JSON.parse(localStorage.getItem(el)));      
+    // })
+    Object.keys(localStorage).sort((a,b)=>{        
+        return Date.parse(JSON.parse(localStorage.getItem(b)).finishDate) - Date.parse(JSON.parse(localStorage.getItem(a)).finishDate)
+     }).forEach(el => {
+            createDivTask(JSON.parse(localStorage.getItem(el)));      
+        })
 }
 
 function saveNewTask(e) { 
