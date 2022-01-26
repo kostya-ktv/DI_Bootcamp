@@ -20,7 +20,7 @@ class App extends React.Component{
   }
  
   render(){
-    let child = this.state.show && <Child/>
+    
     return (
       <div className="App">
         <Car carInfo = {carinfo}/>
@@ -28,7 +28,7 @@ class App extends React.Component{
         <Phone/>
         <Color/>
         <ErrorBoundary>
-          {child}
+          {this.state.show && <Child/>}
         </ErrorBoundary>
         <button onClick={()=>{this.setState({show: false})}}>REMOVE CHILD COMPONENT</button>
         
