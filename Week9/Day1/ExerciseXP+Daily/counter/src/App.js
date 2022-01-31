@@ -1,5 +1,6 @@
 import './App.css';
 import CounterComponent from './components/Counter-component';
+import MoviesComponent from './components/Movies-component';
 
 
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
        <CounterComponent/>
+       <MoviesComponent/>
       </header>
     </div>
   );
