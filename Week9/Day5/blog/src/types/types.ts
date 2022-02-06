@@ -1,3 +1,4 @@
 export type blogStateType = {
-   value: null | any
+   title: null | string,
+   details: null | string
 }
